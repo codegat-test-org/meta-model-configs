@@ -41,7 +41,7 @@ jobs:
     # the test results and checksum.
     needs:
       - config
-    uses: access-nri/model-config-tests/.github/workflows/test-repro.yml@main
+    uses: codegat-test-org/meta-model-configs/.github/workflows/test-repro.yml@main
     with:
       model-name: access-om2
       environment-name: Gadi
