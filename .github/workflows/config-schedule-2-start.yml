@@ -30,7 +30,7 @@ jobs:
 
       - name: Read scheduled tests config
         id: scheduled-config
-        uses: access-nri/model-config-tests/.github/actions/parse-ci-config@main
+        uses: codegat-test-org/meta-model-configs/.github/actions/parse-ci-config@main
         with:
           check: scheduled
           branch-or-tag: ${{ inputs.config-tag }}

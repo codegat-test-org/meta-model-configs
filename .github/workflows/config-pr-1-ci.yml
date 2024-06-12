@@ -96,7 +96,7 @@ jobs:
 
       - name: Read QA tests config
         id: qa-config
-        uses: access-nri/model-config-tests/.github/actions/parse-ci-config@main
+        uses: codegat-test-org/meta-model-configs/.github/actions/parse-ci-config@main
         with:
           check: qa
           branch-or-tag: ${{ github.base_ref }}
@@ -104,7 +104,7 @@ jobs:
 
       - name: Read reproducibility tests config
         id: repro-config
-        uses: access-nri/model-config-tests/.github/actions/parse-ci-config@main
+        uses: codegat-test-org/meta-model-configs/.github/actions/parse-ci-config@main
         with:
           check: reproducibility
           branch-or-tag: ${{ github.base_ref }}
