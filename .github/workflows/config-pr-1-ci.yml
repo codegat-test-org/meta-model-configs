@@ -121,10 +121,10 @@ jobs:
     permissions:
       checks: write
     steps:
-      - name: Checkout PR ${{ github.event.action.pull_request.number }}
+      - name: Checkout PR ${{ github.event.pull_request.number }}
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref }}
+        # with:
+        #   ref: ${{ github.head_ref }}
 
       - name: Setup Python
         uses: actions/setup-python@v5
