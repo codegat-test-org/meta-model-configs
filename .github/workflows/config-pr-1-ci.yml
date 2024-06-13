@@ -130,7 +130,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ needs.config.outputs.qa-python-version }}
-          cache: pip
+          # cache: pip
 
       - name: Install model-config-tests
         run: pip install model-config-tests=='${{ needs.config.outputs.qa-model-config-tests-version }}'
